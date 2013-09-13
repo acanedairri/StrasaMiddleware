@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<context id="context1">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:13306/strasa" userId="root"
+			password="" />
+		<javaModelGenerator targetPackage="org.strasa.middleware.model"
+			targetProject="StrasaMiddleware/src/java/main" />
+
+
+		<javaClientGenerator targetPackage="org.strasa.middleware.mapper"
+			targetProject="StrasaMiddleware/src/java/main" type="ANNOTATEDMAPPER" />
+
+		<table schema="MYSCHEMA" tableName="study" domainObjectName="Study">
+			<generatedKey column="id" sqlStatement="JDBC" />
+		</table>
+		<table schema="MYSCHEMA" tableName="studydata" domainObjectName="StudyData">
+		
+		</table>
+
+
+	</context>
+</generatorConfiguration>
